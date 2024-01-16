@@ -1,0 +1,3 @@
+2024-01-11 15:17:05,500 {/mnt/c/Users/Maharaj/Downloads/drive-download-20240103T073046Z-001/gstreamer_person_detection_24_oct_2023/gstreamer_person_detection (copy)/src/exception/base_exception.py:21} - ERROR - Exception Occured in Metadatae Service Inition: Error 111 connecting to localhost:6379. Connection refused..
+2024-01-11 15:18:42,244 {start_app.py:27} - INFO - Execution environment is LOCAL_ENVIRONMENT
+2024-01-11 15:18:42,245 {start_app.py:44} - INFO - Initializing app...

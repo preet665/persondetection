@@ -1,0 +1,25 @@
+{
+    "active_camera": ["file_camera1", "file_camera2"],
+    "cameras": {
+        "camera1": {
+            "stream_src" : "",
+            "source": "v4l2src device=/dev/video0 ! videoconvert ! video/x-raw,format=NV12 ! queue"
+        },
+        "camera2": {
+            "stream_src" : "",
+            "source": "v4l2src device=/dev/video1 ! videoconvert ! video/x-raw,format=NV12 ! queue"
+        },
+        "file_camera1": {
+            "stream_src": "../../resources/reid-data/topKTestOnBlend/query",
+            "source": "filesrc location=person.mp4 ! qtdemux name=demux demux.video_0 ! decodebin ! videoconvert ! video/x-raw,format=BGR ! appsink name=sink"
+        },
+        "file_camera2": {
+            "stream_src": "../../resources/reid-data/topKTestOnBlend/query",
+            "source": "filesrc location=input_vid1.mp4 ! qtdemux name=demux demux.video_0 ! decodebin ! videoconvert ! video/x-raw,format=BGR ! appsink name=sink"
+        }
+    }
+}
+
+
+
+ 

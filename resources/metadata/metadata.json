@@ -1,0 +1,17 @@
+{
+        
+        "frame_metadata": {
+                        "time" : "",
+                        "tracker_id":"",
+                        "center":"",
+                        "in": "",
+                        "height": "",
+                        "width": "",
+                        "X" : "",
+                        "Y" : "",
+                        "pred_class": "",
+                        "pred_score": ""
+                                      
+                        }
+
+}

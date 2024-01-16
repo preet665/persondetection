@@ -1,0 +1,725 @@
+[{
+
+"detector": {
+"FP_detector": {
+"model_artifacts": {
+"size": 640,
+"type": "yolov5",
+"device": "cuda:0",
+"iou_thresh": 0.7,
+"conf_thresh": 0.85,
+"weights_path": "/app/model_weights/sco_fp_yolo_med_640_v4.pt"
+}},
+"model_artifacts": {
+"size": 640,
+"type": "yolov5",
+"device": "cuda:0",
+"conf_thresh": 0.6,
+"weights_path": "/app/model_weights/cv-sco-product-detection_v19.pt"
+},
+"use_fp_detector": true,
+"confidence_model": "/app/model_weights/confidence_model.zip"
+},
+"tracker": {
+"type": "ocsort",
+"extra_parameters": {
+"delta_t": 3,
+"inertia": 0.2,
+"max_age": 400,
+"min_hits": 5,
+"use_byte": true,
+"asso_func": "iou",
+"det_thresh": 0.775,
+"iou_threshold": 0.2
+}},
+
+"business_use_cases": {},
+"publisher": {},
+"algo_params": {
+"counter": {
+"type": "max_count",
+"heuristics": {
+"exclude_flickers": true,
+"exclude_static_products": true,
+"exclude_passing_by_products": true,
+"publish_confidence_model_training_meta": true
+},
+
+"min_frames": 10
+
+},
+
+"save_video": false,
+
+"buffer_secs": 0,
+
+"bagging_area": {
+
+"x1": 308,
+
+"x2": 395,
+
+"y1": 119,
+
+"y2": 167
+
+},
+
+"display_results": {
+
+"draw_meta": true,
+
+"show_results": false
+
+},
+
+"exclusion_area_1": {
+
+"x1": 1,
+
+"x2": 242,
+
+"y1": 0,
+
+"y2": 167
+
+},
+
+"exclusion_area_2": {
+
+"x1": 458,
+
+"x2": 638,
+
+"y1": 1,
+
+"y2": 220
+
+},
+
+"exclusion_area_3": {
+
+"x1": 530,
+
+"x2": 638,
+
+"y1": 221,
+
+"y2": 477
+
+},
+
+"exclusion_area_4": {
+
+"x1": 0,
+
+"x2": 555,
+
+"y1": 397,
+
+"y2": 479
+
+},
+
+"image_upload_env": "prod",
+
+"roi_resolution_x": 640,
+
+"roi_resolution_y": 480,
+
+"transaction_area": {
+
+"x1": 93,
+
+"x2": 530,
+
+"y1": 96,
+
+"y2": 394
+
+},
+
+"use_payment_event": true,
+
+"upload_max_count_frame": true
+
+},
+
+"camera_id": 1142,
+
+"business_use_case": "sco-shrinkage",
+
+"store_id": "1776",
+
+"config_details": null,
+
+"video_adaptor": {
+
+"fps": 10,
+
+"date": "2022-06-01",
+
+"type": "rtsp_reader",
+
+"codec": "h264",
+
+"end_time": "21:00:00",
+
+"store_id": "1776",
+
+"timezone": "US/Eastern",
+
+"camera_id": 1142,
+
+"ip_address": "10.27.193.224",
+
+"start_time": "06:00:00",
+
+"video_path": "",
+
+"camera_name": "OBJ05-47_224",
+
+"camera_type": "Axis",
+
+"register_num": "47",
+
+"resolution_x": 640,
+
+"resolution_y": 480,
+
+"verient_camera_id": "CAM01142",
+
+"verient_folder_path": "verient_videos/"
+
+},
+
+"camera_name": "OBJ05-47_224"
+
+},
+
+{
+
+"detector": {
+"FP_detector": {
+"model_artifacts": {
+"size": 640,
+"type": "yolov5",
+"device": "cuda:0",
+"iou_thresh": 0.7,
+"conf_thresh": 0.85,
+"weights_path": "/app/model_weights/sco_fp_yolo_med_640_v4.pt"
+}
+},
+
+"model_artifacts": {
+
+"size": 640,
+
+"type": "yolov5",
+
+"device": "cuda:0",
+
+"conf_thresh": 0.6,
+
+"weights_path": "/app/model_weights/cv-sco-product-detection_v19.pt"
+
+},
+
+"use_fp_detector": true,
+
+"confidence_model": "/app/model_weights/confidence_model.zip"
+
+},
+
+"tracker": {
+
+"type": "ocsort",
+
+"extra_parameters": {
+
+"delta_t": 3,
+
+"inertia": 0.2,
+
+"max_age": 400,
+
+"min_hits": 5,
+
+"use_byte": true,
+
+"asso_func": "iou",
+
+"det_thresh": 0.775,
+
+"iou_threshold": 0.2
+
+}
+
+},
+
+"business_use_cases": {},
+
+"publisher": {},
+
+"algo_params": {
+
+"counter": {
+
+"type": "max_count",
+
+"heuristics": {
+
+"exclude_flickers": true,
+
+"exclude_static_products": true,
+
+"exclude_passing_by_products": true,
+
+"publish_confidence_model_training_meta": true
+
+},
+
+"min_frames": 10
+
+},
+
+"save_video": false,
+
+"buffer_secs": 0,
+
+"bagging_area": {
+
+"x1": 271,
+
+"x2": 362,
+
+"y1": 114,
+
+"y2": 176
+
+},
+
+"display_results": {
+
+"draw_meta": true,
+
+"show_results": false
+
+},
+
+"exclusion_area_1": {
+
+"x1": 0,
+
+"x2": 194,
+
+"y1": 1,
+
+"y2": 203
+
+},
+
+"exclusion_area_2": {
+
+"x1": 462,
+
+"x2": 639,
+
+"y1": 0,
+
+"y2": 212
+
+},
+
+"exclusion_area_3": {
+
+"x1": 557,
+
+"x2": 635,
+
+"y1": 212,
+
+"y2": 477
+
+},
+
+"exclusion_area_4": {
+
+"x1": 1,
+
+"x2": 558,
+
+"y1": 397,
+
+"y2": 475
+
+},
+
+"image_upload_env": "prod",
+
+"roi_resolution_x": 640,
+
+"roi_resolution_y": 480,
+
+"transaction_area": {
+
+"x1": 74,
+
+"x2": 551,
+
+"y1": 48,
+
+"y2": 354
+
+},
+
+"use_payment_event": true,
+
+"upload_max_count_frame": true
+
+},
+
+"camera_id": 1141,
+
+"business_use_case": "sco-shrinkage",
+
+"store_id": "1776",
+
+"config_details": null,
+
+"video_adaptor": {
+
+"fps": 10,
+
+"date": "2022-06-01",
+
+"type": "rtsp_reader",
+
+"codec": "h264",
+
+"end_time": "21:00:00",
+
+"store_id": "1776",
+
+"timezone": "US/Eastern",
+
+"camera_id": 1141,
+
+"ip_address": "10.27.193.223",
+
+"start_time": "06:00:00",
+
+"video_path": "",
+
+"camera_name": "OBJ04-21_223",
+
+"camera_type": "Axis",
+
+"register_num": "21",
+
+"resolution_x": 640,
+
+"resolution_y": 480,
+
+"verient_camera_id": "CAM01141",
+
+"verient_folder_path": "verient_videos/"
+
+},
+
+"camera_name": "OBJ04-21_223"
+
+},
+
+{
+
+"detector": {
+
+"FP_detector": {
+
+"model_artifacts": {
+
+"size": 640,
+
+"type": "yolov5",
+
+"device": "cuda:0",
+
+"iou_thresh": 0.7,
+
+"conf_thresh": 0.85,
+
+"weights_path": "/app/model_weights/sco_fp_yolo_med_640_v4.pt"
+
+}
+
+},
+
+"model_artifacts": {
+
+"size": 640,
+
+"type": "yolov5",
+
+"device": "cuda:0",
+
+"conf_thresh": 0.6,
+
+"weights_path": "/app/model_weights/cv-sco-product-detection_v19.pt"
+
+},
+
+"use_fp_detector": true,
+
+"confidence_model": "/app/model_weights/confidence_model.zip"
+
+},
+
+"tracker": {
+
+"type": "ocsort",
+
+"extra_parameters": {
+
+"delta_t": 3,
+
+"inertia": 0.2,
+
+"max_age": 400,
+
+"min_hits": 5,
+
+"use_byte": true,
+
+"asso_func": "iou",
+
+"det_thresh": 0.775,
+
+"iou_threshold": 0.2
+
+}
+
+},
+
+"business_use_cases": {},
+
+"publisher": {},
+
+"algo_params": {
+
+"counter": {
+
+"type": "max_count",
+
+"heuristics": {
+
+"exclude_flickers": true,
+
+"exclude_static_products": true,
+
+"exclude_passing_by_products": true,
+
+"publish_confidence_model_training_meta": true
+
+},
+
+"min_frames": 10
+
+},
+
+"save_video": false,
+
+"buffer_secs": 0,
+
+"bagging_area": {
+
+"x1": 266,
+
+"x2": 367,
+
+"y1": 168,
+
+"y2": 237
+
+},
+
+"display_results": {
+
+"draw_meta": true,
+
+"show_results": false
+
+},
+
+"exclusion_area_1": {
+
+"x1": 0,
+
+"x2": 174,
+
+"y1": 5,
+
+"y2": 262
+
+},
+
+"exclusion_area_2": {
+
+"x1": 471,
+
+"x2": 638,
+
+"y1": 5,
+
+"y2": 312
+
+},
+
+"image_upload_env": "prod",
+
+"roi_resolution_x": 640,
+
+"roi_resolution_y": 480,
+
+"transaction_area": {
+
+"x1": 55,
+
+"x2": 546,
+
+"y1": 65,
+
+"y2": 416
+
+},
+
+"use_payment_event": true,
+
+"upload_max_count_frame": true
+
+},
+
+"camera_id": 1139,
+
+"business_use_case": "sco-shrinkage",
+
+"store_id": "1776",
+
+"config_details": null,
+
+"video_adaptor": {
+
+"fps": 10,
+
+"date": "2022-06-01",
+
+"type": "rtsp_reader",
+
+"codec": "h264",
+
+"end_time": "21:00:00",
+
+"store_id": "1776",
+
+"timezone": "America/New_York",
+
+"camera_id": 1139,
+
+"ip_address": "10.27.193.227",
+
+"start_time": "06:00:00",
+
+"video_path": "",
+
+"camera_name": "OBJ02-54_227",
+
+"camera_type": "Axis",
+
+"register_num": "54",
+
+"resolution_x": 640,
+
+"resolution_y": 480,
+
+"verient_camera_id": "CAM01139",
+
+"verient_folder_path": "verient_videos/"
+
+},
+
+"camera_name": "OBJ02-54_227"
+
+},
+
+{
+
+"detector": {
+
+"FP_detector": {
+
+"model_artifacts": {
+
+"size": 640,
+
+"type": "yolov5",
+
+"device": "cuda:0",
+
+"iou_thresh": 0.7,
+
+"conf_thresh": 0.85,
+
+"weights_path": "/app/model_weights/sco_fp_yolo_med_640_v4.pt"
+
+}
+
+},
+
+"model_artifacts": {
+
+"size": 640,
+
+"type": "yolov5",
+
+"device": "cuda:0",
+
+"conf_thresh": 0.6,
+
+"weights_path": "/app/model_weights/cv-sco-product-detection_v19.pt"
+
+},
+
+"use_fp_detector": true,
+
+"confidence_model": "/app/model_weights/confidence_model.zip"
+
+},
+
+"tracker": {
+
+"type": "ocsort",
+
+"extra_parameters": {
+
+"delta_t": 3,
+
+"inertia": 0.2,
+
+"max_age": 400,
+
+"min_hits": 5,
+
+"use_byte": true,
+
+"asso_func": "iou",
+
+"det_thresh": 0.775,
+
+"iou_threshold": 0.2
+
+}
+
+},
+
+"business_use_cases": {},
+
